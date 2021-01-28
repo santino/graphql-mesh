@@ -16,7 +16,6 @@ import { get } from 'lodash';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import { join } from 'path';
-import { cwd } from 'process';
 import { graphqlHandler } from './graphql-handler';
 
 import { createServer as createHTTPSServer } from 'https';
@@ -37,6 +36,7 @@ export async function serveMesh(
     fork,
     exampleQuery,
     port,
+    hostname = 'localhost',
     cors: corsConfig,
     handlers,
     staticFiles,
@@ -46,14 +46,16 @@ export async function serveMesh(
     sslCredentials,
   }: YamlConfig.ServeConfig = {}
 ): Promise<void> {
-  const { useServer }: typeof import('graphql-ws/lib/use/ws') = require('graphql-ws/lib/use/ws');
+  const protocol = sslCredentials ? 'https' : 'http';
   const graphqlPath = '/graphql';
+  const serverUrl = `${protocol}://${hostname}:${port}${graphqlPath}`;
+  const { useServer }: typeof import('graphql-ws/lib/use/ws') = require('graphql-ws/lib/use/ws');
   if (isMaster && fork) {
     const forkNum = fork > 1 ? fork : cpus().length;
     for (let i = 0; i < forkNum; i++) {
       clusterFork();
     }
-    logger.info(`🕸️ => Serving GraphQL Mesh GraphiQL: http://localhost:${port}${graphqlPath} in ${fork} forks`);
+    logger.info(`🕸️ => Serving GraphQL Mesh: ${serverUrl} in ${fork} forks`);
   } else {
     const app = express();
     app.set('trust proxy', 'loopback');
@@ -150,9 +152,9 @@ export async function serveMesh(
     }
 
     httpServer
-      .listen(port.toString(), () => {
+      .listen(parseInt(port.toString()), hostname, () => {
         if (!fork) {
-          logger.info(`🕸️ => Serving GraphQL Mesh: http://localhost:${port}`);
+          logger.info(`🕸️ => Serving GraphQL Mesh: ${serverUrl}`);
         }
       })
       .on('error', e => {
