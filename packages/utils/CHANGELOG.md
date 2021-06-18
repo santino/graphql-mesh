@@ -1,5 +1,11 @@
 # @graphql-mesh/utils
 
+## 0.12.1
+
+### Patch Changes
+
+- d8051f87d: use fallbackFormat in readUrlWithCache
+
 ## 0.12.0
 
 ### Minor Changes
