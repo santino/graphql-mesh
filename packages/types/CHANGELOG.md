@@ -1,5 +1,11 @@
 # @graphql-mesh/types
 
+## 0.42.1
+
+### Patch Changes
+
+- d8051f87d: GraphQLHandler endpoint validation
+
 ## 0.42.0
 
 ### Minor Changes
