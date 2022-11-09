@@ -1,5 +1,17 @@
 # @graphql-mesh/transform-prefix
 
+## 0.11.101
+
+### Patch Changes
+
+- [#4790](https://github.com/Urigo/graphql-mesh/pull/4790) [`8c7d96cff`](https://github.com/Urigo/graphql-mesh/commit/8c7d96cff868095216520bafebe989ec94a9df65) Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+  - Updated dependency [`@graphql-tools/wrap@9.2.11` ↗︎](https://www.npmjs.com/package/@graphql-tools/wrap/v/9.2.11) (from `9.2.10`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/delegate@9.0.15` ↗︎](https://www.npmjs.com/package/@graphql-tools/delegate/v/9.0.15) (from `9.0.14`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/utils@9.1.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/utils/v/9.1.0) (from `9.0.1`, in `dependencies`)
+- Updated dependencies [[`8c7d96cff`](https://github.com/Urigo/graphql-mesh/commit/8c7d96cff868095216520bafebe989ec94a9df65), [`8c7d96cff`](https://github.com/Urigo/graphql-mesh/commit/8c7d96cff868095216520bafebe989ec94a9df65), [`76deb32d1`](https://github.com/Urigo/graphql-mesh/commit/76deb32d1c036bc8da171be55582ec3f7b9c5015), [`baa4fbf82`](https://github.com/Urigo/graphql-mesh/commit/baa4fbf82af4a8787b9cab8c99e9177e3491ecf8)]:
+  - @graphql-mesh/types@0.86.0
+  - @graphql-mesh/utils@0.42.7
+
 ## 0.11.100
 
 ### Patch Changes

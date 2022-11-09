@@ -1,5 +1,18 @@
 # @graphql-mesh/replace-field
 
+## 0.3.109
+
+### Patch Changes
+
+- [#4790](https://github.com/Urigo/graphql-mesh/pull/4790) [`8c7d96cff`](https://github.com/Urigo/graphql-mesh/commit/8c7d96cff868095216520bafebe989ec94a9df65) Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+  - Updated dependency [`@graphql-tools/code-file-loader@7.3.11` ↗︎](https://www.npmjs.com/package/@graphql-tools/code-file-loader/v/7.3.11) (from `7.3.10`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/graphql-file-loader@7.5.10` ↗︎](https://www.npmjs.com/package/@graphql-tools/graphql-file-loader/v/7.5.10) (from `7.5.9`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/load@7.8.5` ↗︎](https://www.npmjs.com/package/@graphql-tools/load/v/7.8.5) (from `7.8.4`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/utils@9.1.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/utils/v/9.1.0) (from `9.0.1`, in `dependencies`)
+- Updated dependencies [[`8c7d96cff`](https://github.com/Urigo/graphql-mesh/commit/8c7d96cff868095216520bafebe989ec94a9df65), [`8c7d96cff`](https://github.com/Urigo/graphql-mesh/commit/8c7d96cff868095216520bafebe989ec94a9df65), [`76deb32d1`](https://github.com/Urigo/graphql-mesh/commit/76deb32d1c036bc8da171be55582ec3f7b9c5015), [`baa4fbf82`](https://github.com/Urigo/graphql-mesh/commit/baa4fbf82af4a8787b9cab8c99e9177e3491ecf8)]:
+  - @graphql-mesh/types@0.86.0
+  - @graphql-mesh/utils@0.42.7
+
 ## 0.3.108
 
 ### Patch Changes
