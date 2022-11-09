@@ -1,5 +1,24 @@
 # @graphql-mesh/types
 
+## 0.86.0
+
+### Minor Changes
+
+- [#4789](https://github.com/Urigo/graphql-mesh/pull/4789) [`76deb32d1`](https://github.com/Urigo/graphql-mesh/commit/76deb32d1c036bc8da171be55582ec3f7b9c5015) Thanks [@ardatan](https://github.com/ardatan)! - _BREAKING_ - Local schemas, SDLs and introspections are now provided as `source` instead of `introspection` or `schema`. See the docs for more information.
+
+### Patch Changes
+
+- [#4790](https://github.com/Urigo/graphql-mesh/pull/4790) [`8c7d96cff`](https://github.com/Urigo/graphql-mesh/commit/8c7d96cff868095216520bafebe989ec94a9df65) Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+
+  - Updated dependency [`@graphql-tools/batch-delegate@8.4.8` ↗︎](https://www.npmjs.com/package/@graphql-tools/batch-delegate/v/8.4.8) (from `8.4.7`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/delegate@9.0.15` ↗︎](https://www.npmjs.com/package/@graphql-tools/delegate/v/9.0.15) (from `9.0.14`, in `dependencies`)
+  - Updated dependency [`@graphql-tools/utils@9.1.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/utils/v/9.1.0) (from `9.0.1`, in `dependencies`)
+
+- [#4777](https://github.com/Urigo/graphql-mesh/pull/4777) [`baa4fbf82`](https://github.com/Urigo/graphql-mesh/commit/baa4fbf82af4a8787b9cab8c99e9177e3491ecf8) Thanks [@dr3](https://github.com/dr3)! - Allow pascal-cased `Query` and `Mutation` values for `selectQueryOrMutationField`
+
+- Updated dependencies [[`8c7d96cff`](https://github.com/Urigo/graphql-mesh/commit/8c7d96cff868095216520bafebe989ec94a9df65)]:
+  - @graphql-mesh/store@0.8.63
+
 ## 0.85.7
 
 ### Patch Changes
