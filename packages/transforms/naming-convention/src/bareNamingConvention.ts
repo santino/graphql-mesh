@@ -68,7 +68,7 @@ const defaultResolverComposer =
     // map result values from original value to new renamed value
     return resultMap
       ? Array.isArray(originalResult)
-        ? originalResult.map(result => resultMap[result as string] || originalResult)
+        ? originalResult.map(result => resultMap[result as string] || result)
         : resultMap[originalResult as string] || originalResult
       : originalResult;
   };
@@ -149,7 +149,7 @@ export default class NamingConventionTransform implements MeshTransform {
           ];
         },
       }),
-      ...((this.config.fieldNames || this.config.fieldArgumentNames) && {
+      ...((this.config.enumValues || this.config.fieldNames || this.config.fieldArgumentNames) && {
         [MapperKind.COMPOSITE_FIELD]: (fieldConfig, fieldName) => {
           const enumNamingConventionFn = NAMING_CONVENTIONS[this.config.enumValues];
           const fieldNamingConventionFn =
@@ -211,7 +211,7 @@ export default class NamingConventionTransform implements MeshTransform {
           fieldConfig.resolve = defaultResolverComposer(
             fieldConfig.resolve,
             fieldName,
-            argsMap,
+            Object.keys(argsMap).length ? argsMap : null,
             resultMap,
           );
 
