@@ -1,5 +1,13 @@
 # grpc-example
 
+## 0.11.4
+
+### Patch Changes
+
+- Updated dependencies
+  [[`ebb5f3840`](https://github.com/ardatan/graphql-mesh/commit/ebb5f38408c6e1f2d57fb8e5c28dc32eb34f6fd3)]:
+  - @graphql-mesh/transform-naming-convention@0.95.10
+
 ## 0.11.3
 
 ### Patch Changes
